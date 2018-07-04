@@ -8,7 +8,7 @@ export default function(forecastData) {
             const tempMaxList = group.map(item => item.main.temp_max);
             const tempMaxHumidity = group.map(item => item.main.humidity);
             const status = group.map(item => item.weather[0]);
-            const weather = status[Math.round(status.length / 2)];
+            const weather = status[Math.round(status.length / 2)-1];
 
             group = {
                 day: key,

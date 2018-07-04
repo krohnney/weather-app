@@ -6,7 +6,7 @@ import arrowSvg from '../arrow.svg';
 class Weather extends Component {
 
     render() {
-        const { weather, city }  = this.props;
+        const { weather }  = this.props;
 
         return (
             <div className="row">
@@ -33,7 +33,7 @@ class Weather extends Component {
                                             </tr>
                                             <tr>
                                                 <td><small>Wind direction</small></td>
-                                                <td><img src={arrowSvg} style={{
+                                                <td><img src={arrowSvg} alt="" style={{
                                                     width: '16px',
                                                     transform: `rotate(${weather.windDirection}deg)`
                                                 }}/></td>
